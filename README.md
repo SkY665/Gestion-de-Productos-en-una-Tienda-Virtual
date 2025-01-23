@@ -20,7 +20,23 @@ http://localhost/tienda_virtual/app/views/productos/
 Despues de que haya creado el producto ingrese a esta ruta 
 http://localhost/phpmyadmin/
 
-Ingrese al la seccion SQL y ejecute este query para obversar el producto que haya creado
+Ingrese al la seccion SQL y ejecute este query para obversar el producto que haya creado, tambien ejecute este query para crear la base de datos y tabla respectiva
+-- Crear la base de datos
+CREATE DATABASE tienda_virtual;
+
+-- Usar la base de datos
+USE tienda_virtual;
+
+-- Crear la tabla productos
+CREATE TABLE productos (
+    id_producto INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    descripcion TEXT,
+    precio DECIMAL(8, 2) NOT NULL,
+    stock INT NOT NULL
+);
+
+
 SELECT * FROM productos;
 
 Despues de realiazar estos pasos usted habra podido crear un producto con nuestra aplicacion.
