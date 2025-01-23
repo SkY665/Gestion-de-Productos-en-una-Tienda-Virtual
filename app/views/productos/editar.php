@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Editar Producto</h1>
-    <form method="POST" action="/public/index.php?controller=producto&action=editar">
+    <form method="POST" action="/tienda_virtual/public/index.php?controller=producto&action=editar">
         <input type="hidden" name="_method" value="PUT">
         
         <label for="nombre">Nombre:</label>
